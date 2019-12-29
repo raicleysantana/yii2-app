@@ -23,6 +23,6 @@ class PageController extends Controller
         }
 
         $viewFile = $model->view ?: 'view';
-        return $this->render($viewFile, ['model' => $model]);
+        return $this->renderAjax($viewFile, ['model' => $model]);
     }
 }

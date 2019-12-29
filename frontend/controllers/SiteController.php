@@ -120,4 +120,11 @@ class SiteController extends Controller
 
         return $content;
     }
+
+
+    public function actionMaterial_design(){
+        $this->layout = "material_theme";
+        
+        return $this->render('material_design');
+    }
 }
