@@ -1,6 +1,12 @@
 <?php
 /* @var $this yii\web\View */
+
+use frontend\assets\Animate;
+
 $this->title = Yii::$app->name;
+Animate::register($this);
+
+
 ?>
 <div class="site-index">
 
@@ -13,8 +19,7 @@ $this->title = Yii::$app->name;
     ]) ?>
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
+        <h1 class="animated rotateInDownRight">Congratulations!</h1>
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
         <?php echo common\widgets\DbMenu::widget([
